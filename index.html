@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Caveat:wght@500&family=Roboto:wght@100;300&display=swap" rel="stylesheet">  
+
+  
+
+  <link href="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+  " rel="stylesheet">
+
+  <style>
+    * {
+      overflow: none;
+    }
+    .splide__arrow {
+        background-color: transparent !important;
+    }
+    .splide__pagination__page {
+      color: white;
+      height: 20px !important;
+      width: 20px !important;
+      background-color: rgb(255, 255, 255) !important;
+    }
+    .splide__pagination__page.is-active {
+      height: 20px;
+      width: 20px;
+      background-color: #283493 !important;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .splide__arrow {
+      bottom: -100px;
+      margin: 50px
+    }
+    .splide__arrow svg {
+        fill: #d6c55e;
+        opacity: 1;
+        height: 200px;
+        width: 200px;
+    }
+  </style>
+
+</head>
+<body class="overflow-hidden">
+  <div class="absolute bg-center bg-cover bottom-0 style="z-index: -1; ">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player class="bg-center bg-cover min-h-[1000px] h-[1000px] min-w-[1000px] w-[1000px] lg:min-h-[3000px] lg:h-[3000px] lg:min-w-[3000px] lg:w-[3000px]"  src="./CW64b35iXy.json" background="transparent" speed="1" loop  autoplay style="z-index: -1;"></lottie-player>
+  </div>
+
+ 
+  <!-- This example requires Tailwind CSS v3.0+ -->
+<div class="isolate overflow-hidden">
+  <div class="px-6 pt-6 lg:px-8 text-white">
+    <nav class="flex items-center justify-between" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="font-badscript text-4xl">MB</span>
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <!-- Heroicon name: outline/bars-3 -->
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="#" class="text-sm font-semibold leading-6 text-white">&rarr;</span></a>
+      </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div role="dialog" aria-modal="true" class="hidden">
+      <div focus="true" class="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img class="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+          </a>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-white">
+            <span class="sr-only">Close menu</span>
+            <!-- Heroicon name: outline/x-mark -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Product</a>
+
+              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Features</a>
+
+              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Marketplace</a>
+
+              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Company</a>
+            </div>
+            <div class="py-6">
+              <a href="#" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-white hover:bg-gray-400/10">Log in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    
+    <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <!-- Section 1 -->
+          <div class="relative px-6 lg:px-8 splide__slide">
+            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+              <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+                <div class="bg-black1 relative rounded-full py-1 px-3 text-sm leading-6 text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                  Status: <a href="#" class="font-semibold text-green-600"><span class="absolute inset-0" aria-hidden="true"></span>OPEN TO WORK<span aria-hidden="true">&rarr;</span></a>
+                </div>
+              </div>
+              <div class="text-center">
+                <h1 class="text-6xl caveat text-white" style="font-family: 'Caveat', cursive;">MAXIME BENAMARA</h1>
+                <p class="mt-6 text-lg leading-8 text-white" style="font-family: 'Roboto', sans-serif;">Un autodidacte passionné spécialistes en logiciel et en développement Web. Spécialisés dans la digitalisations aux entreprises et le Web 3.0.          </p>
+                <div class="mt-10 flex items-center justify-center gap-x-6">
+                  <a href="#" onclick="window.splide.go(1)" class="bg-black1  px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-black-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+                  <a href="#" onclick="window.splide.go(2)" class="text-base font-semibold leading-7 text-white">Learn more <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="py-24 sm:py-32 splide__slide text-white">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto max-w-2xl lg:text-center">
+                <h2 class="text-lg font-semibold leading-8 tracking-tight text-white">Deploy faster</h2>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Everything you need to deploy your app</p>
+                <p class="mt-6 text-lg leading-8 text-white">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+              </div>
+              <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+                <dl class="grid max-w-xl grid-cols-1 gap-y-10 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-orangec">
+                      <div class="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-black1">
+                        <!-- Heroicon name: outline/cloud-arrow-up -->
+                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                        </svg>
+                      </div>
+                      Push to deploy
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-white">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</dd>
+                  </div>
+          
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-orangec">
+                      <div class="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-black1">
+                        <!-- Heroicon name: outline/lock-closed -->
+                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                        </svg>
+                      </div>
+                      SSL certificates
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-white">Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.</dd>
+                  </div>
+          
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-orangec">
+                      <div class="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-black1">
+                        <!-- Heroicon name: outline/arrow-path -->
+                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                        </svg>
+                      </div>
+                      Simple queues
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-white">Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.</dd>
+                  </div>
+          
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-orangec">
+                      <div class="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-black1">
+                        <!-- Heroicon name: outline/finger-print -->
+                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+                        </svg>
+                      </div>
+                      Advanced security
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-white">Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Section 3 -->
+          <div class="splide__slide !text-white">
+            <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:py-40 lg:px-8">
+              <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
+                <h2 class="text-2xl font-bold leading-10 tracking-tight text-white">Frequently asked questions</h2>
+                <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
+
+                  <div class="pt-6 " id="faq-1" mb-active="true" onclick="clickFaq(this)" >
+                    <dt >
+                      <!-- Expand/collapse question button -->
+                      <button type="button" class="flex w-full items-start justify-between text-left text-white" aria-controls="faq-0" aria-expanded="false">
+                        <span class="text-base font-semibold leading-7 text-orangec">What&#039;s the best thing about Switzerland?</span>
+                        <span class="faq ml-6 flex h-7 items-center">
+                          <!--
+                            Icon when question is collapsed.
+
+                            Heroicon name: outline/minus-small
+
+                            Item expanded: "hidden", Item collapsed: ""
+                          -->
+                          <svg class="arrow hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                          </svg>
+                          <!--
+                            Icon when question is expanded.
+
+                            Heroicon name: outline/plus-small
+
+                            Item expanded: "", Item collapsed: "hidden"
+                          -->
+                          <svg class="plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                          </svg>
+                        </span>
+                      </button>
+                    </dt>
+                    <dd class="textfaq mt-2 pr-12" aria-controls="faq-0" class="faq">
+                      <p class="text-base leading-7 text-white">I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+                    </dd>
+                  </div>
+
+                  <div class="pt-6 " id="faq-2" mb-active="true" onclick="clickFaq(this)" >
+                    <dt >
+                      <!-- Expand/collapse question button -->
+                      <button type="button" class="flex w-full items-start justify-between text-left text-white" aria-controls="faq-0" aria-expanded="false">
+                        <span class="text-base font-semibold leading-7 text-orangec">What&#039;s the best thing about Switzerland?</span>
+                        <span class="faq ml-6 flex h-7 items-center">
+                          <!--
+                            Icon when question is collapsed.
+
+                            Heroicon name: outline/minus-small
+
+                            Item expanded: "hidden", Item collapsed: ""
+                          -->
+                          <svg class="arrow h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                          </svg>
+                          <!--
+                            Icon when question is expanded.
+
+                            Heroicon name: outline/plus-small
+
+                            Item expanded: "", Item collapsed: "hidden"
+                          -->
+                          <svg class="hidden plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                          </svg>
+                        </span>
+                      </button>
+                    </dt>
+                    <dd class="textfaq mt-2 pr-12 hidden" aria-controls="faq-0" class="faq">
+                      <p class="text-base leading-7 text-white">I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+                    </dd>
+                  </div>
+
+                  <div class="pt-6 " id="faq-3" mb-active="true" onclick="clickFaq(this)" >
+                    <dt >
+                      <!-- Expand/collapse question button -->
+                      <button type="button" class="flex w-full items-start justify-between text-left text-white" aria-controls="faq-0" aria-expanded="false">
+                        <span class="text-base font-semibold leading-7 text-orangec">What&#039;s the best thing about Switzerland?</span>
+                        <span class="faq ml-6 flex h-7 items-center">
+                          <!--
+                            Icon when question is collapsed.
+
+                            Heroicon name: outline/minus-small
+
+                            Item expanded: "hidden", Item collapsed: ""
+                          -->
+                          <svg class="arrow h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                          </svg>
+                          <!--
+                            Icon when question is expanded.
+
+                            Heroicon name: outline/plus-small
+
+                            Item expanded: "", Item collapsed: "hidden"
+                          -->
+                          <svg class="hidden plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                          </svg>
+                        </span>
+                      </button>
+                    </dt>
+                    <dd class="textfaq mt-2 pr-12 hidden" aria-controls="faq-0" class="faq">
+                      <p class="text-base leading-7 text-white">I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+                    </dd>
+                  </div>
+
+                  <div class="pt-6 " id="faq-4" mb-active="true" onclick="clickFaq(this)" >
+                    <dt >
+                      <!-- Expand/collapse question button -->
+                      <button type="button" class="flex w-full items-start justify-between text-left text-white" aria-controls="faq-0" aria-expanded="false">
+                        <span class="text-base font-semibold leading-7 text-orangec">What&#039;s the best thing about Switzerland?</span>
+                        <span class="faq ml-6 flex h-7 items-center">
+                          <!--
+                            Icon when question is collapsed.
+
+                            Heroicon name: outline/minus-small
+
+                            Item expanded: "hidden", Item collapsed: ""
+                          -->
+                          <svg class="arrow h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                          </svg>
+                          <!--
+                            Icon when question is expanded.
+
+                            Heroicon name: outline/plus-small
+
+                            Item expanded: "", Item collapsed: "hidden"
+                          -->
+                          <svg class="hidden plus h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                          </svg>
+                        </span>
+                      </button>
+                    </dt>
+                    <dd class="textfaq mt-2 pr-12 hidden" aria-controls="faq-0" class="faq">
+                      <p class="text-base leading-7 text-white">I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+                    </dd>
+                  </div>
+
+                  <!-- More questions... -->
+                </dl>
+              </div>
+            </div>
+          </div>
+
+        </ul>
+      </div>
+    </div>
+  </main>
+</div>
+
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
+  <script>
+
+      const faq = [
+        {
+          id: "faq-1",
+          status: true
+        },
+        {
+          id: "faq-2",
+          status: false
+        },
+        {
+          id: "faq-3",
+          status: false
+        },
+        {
+          id: "faq-4",
+          status: false
+        }
+      ];
+
+      async function openCloseFAQ(faq){
+        const el = document.getElementById(faq.id);
+        
+        const {status} = faq;
+
+        const arrow = el.getElementsByClassName("arrow")[0];
+        const plus = el.getElementsByClassName("plus")[0];
+        const textfaq = el.getElementsByClassName("textfaq")[0];
+
+        status ? arrow.classList.remove("hidden") : arrow.classList.add("hidden")
+        status ? plus.classList.add("hidden") : plus.classList.remove("hidden") 
+        status ? textfaq.classList.add("hidden") : textfaq.classList.remove("hidden")
+
+        faq.status = !status;
+      }
+
+      async function clickFaq(e){
+        const el = document.getElementById(e.id);
+        const _faq = faq.find(t=>t.id == el.id);
+
+        const openned = faq.filter(t=>t.status == true && t != _faq);
+        
+        if(openned.length == 1){
+          openCloseFAQ(openned[0])
+        }
+
+        openCloseFAQ(_faq)
+      }
+
+
+      document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '.splide', {
+          classes: {
+            arrows: 'splide__arrows your-class-arrows',
+            arrow : 'splide__arrow your-class-arrow',
+            prev  : 'splide__arrow--prev your-class-prev',
+            next  : 'splide__arrow--next your-class-next',
+            pagination: 'splide__pagination custom_pagination',
+		        page      : 'splide__pagination__page your-class-page'
+          },
+        } );
+        splide.on( 'pagination:mounted', function ( data ) {
+          // You can add your class to the UL element
+          data.list.classList.add( 'custom_pagination' );
+
+          // `items` contains all dot items
+          data.items.forEach( function ( item ) {
+            item.button.textContent = String( item.page + 1 );
+          } );
+        } );
+        window.splide = splide;
+
+        splide.mount();
+        
+
+      } );
+  </script>
+</body>
+</html>
